@@ -5,6 +5,7 @@ body{
     border: 4px dotted rgb(44, 44, 44);
     padding: 10px 10px 10px 10px;
     font-family: sans-serif;
+    
     }
     h1.titulo{
     
@@ -17,16 +18,56 @@ body{
     h1{
     color: #838383;
     font-family: verdana;
-    text-shadow: 2px 2px 2px rgb(238, 238, 238)
+    text-shadow: 2px 2px 2px rgb(238, 238, 238);
+    text-align: center;
+
     }
     h2{
     color:#4b4b4b;
-    text-shadow: 2px 2px 2px rgb(199, 199, 199)
+    text-shadow: 2px 2px 2px rgb(199, 199, 199);
+    text-align: center;
     }
     img{
     border: 4px solid #444444;
     object-fit: cover;
     transform: translateX(50%);
     }
+    img{
+        border-radius: 12px;
+        transition: .3s;
+    }
     
-    p{ color: rgb(255, 255, 255); }
+    img:hover{
+        transform: scale(1.05);
+    }
+    
+    p{ color: rgb(255, 255, 255);
+    text-align: center;
+    }
+    
+    .estrela{
+        position: fixed;
+        font-size:40px;
+        animation: brilho 2s infinite alternate;
+    }
+    
+    .canto-superior-esquerdo{
+        top:15px;
+        left:15px;
+    }
+    
+    .canto-superior-direito{
+        top:15px;
+        right:15px;
+    }
+    
+    .canto-inferior-esquerdo{
+        bottom:15px;
+        left:15px;
+    }
+    
+    .canto-inferior-direito{
+        bottom:15px;
+        right:15px;
+    }
+    
